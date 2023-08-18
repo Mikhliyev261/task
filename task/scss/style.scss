@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #343434;
+
+    font-family: 'Lexend Deca', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 921px;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 307px;
+        height: 500px;
+        background: #E28625;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .logo{
+            margin-top: 48px;
+            margin-left: 48px;
+        }
+        h3{
+            font-family: 'Big Shoulders Display', cursive;
+            font-weight: 700px;
+            font-size: 40px;
+            color: #F2F2F2;
+            margin-left: 48px;
+        }
+        p{
+            width: 212px;
+            height: 125px;
+            margin-left: 48px;
+            color: #F2F2F2;
+        }
+        button{
+            width: 146px;
+            height: 48px;
+            border-radius: 50px;
+            border: none;
+            margin-bottom: 48px;
+            color: #E28625;
+            font-weight: 400;
+            font-size: 15px;
+            font-family: 'Lexend Deca', sans-serif;
+            cursor: pointer;
+            margin-left: 48px;
+            &:hover{
+                background: #E28625;
+                border: 3px solid white;
+                color: white;
+                transition: 0.5s;
+            }
+        }
+    }
+    .container:nth-child(2){
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background: #006971;
+        button{
+            color: #006971;
+            &:hover{
+                background: #006971;
+                border: 3px solid white;
+                color: white;
+                transition: 0.5s;
+            }
+        }
+    }
+    .container:nth-child(3){
+        background: #004140;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        button{
+            color: #004140;
+            &:hover{
+                background: #004140;
+                border: 3px solid white;
+                color: white;
+                transition: 0.5s;
+            }
+        }
+    }
+    
+}
